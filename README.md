@@ -1,39 +1,36 @@
-<p align="center">
-  <img src="favicon.svg" width="90" alt="HabitFlow logo">
-</p>
-
 # 🌿 HabitFlow
 
-**HabitFlow** is a lightweight web app built to help you stay consistent with your daily habits while keeping track of your everyday expenses — all in one clean interface.  
-It’s designed for simplicity, speed, and usability, using nothing more than **HTML, CSS, and JavaScript**.
+**HabitFlow** is a minimal and responsive web application that helps you stay consistent with your daily habits while keeping an eye on your expenses — all in one place.  
+It’s designed for people who want a simple, distraction-free way to build habits and track spending, without needing an account or any setup.
+
+Built using **HTML, CSS, and JavaScript**, it runs entirely in your browser and saves your data locally.
 
 ---
 
 ### 🌐 Live Demo  
-🔗 **[View HabitFlow in Action](https://drupathmm.github.io/habitflow/)**  
+👉 [Open HabitFlow](https://drupathmm.github.io/habitflow/)
 
 ---
 
-### 💡 Project Overview  
+### 💡 About the Project
 
-Most apps focus on either habits or finances — *HabitFlow* combines both.  
-It lets you manage your routines and spending side by side, giving you a simple way to build consistency and financial awareness every day.
+The idea behind *HabitFlow* is to bring habit building and expense tracking together in one simple tool.  
+Most apps focus on just one — but in reality, both are part of your daily discipline.  
 
-This project was created as part of my learning journey in web development.  
-It focuses on writing clean, maintainable code, using browser storage effectively, and building smooth, responsive UI components without any frameworks.
+I created this project to improve my front-end development skills and understand how to build a fully functional web app from scratch, with features like persistent local storage, dynamic rendering, and data visualization.
 
 ---
 
 ### ✨ Features
 
-- ✅ Add, edit, and delete daily habits  
-- 🔁 Track streaks and daily completions  
-- 💸 Log expenses by category (Food, Transport, Bills, etc.)  
-- 📊 Visual expense breakdown using Chart.js  
-- 💾 Local data storage (no server required)  
-- ⬆️ Import / Export backups as JSON  
-- 📱 Responsive and mobile-friendly layout  
-- ⚡ Fast, minimalist, and distraction-free interface  
+- Add, edit, and delete daily habits  
+- Track habit streaks and completion days  
+- Add expenses with categories (Food, Transport, Bills, Other)  
+- View spending insights with a live doughnut chart (Chart.js)  
+- Data saved locally in the browser — no backend required  
+- Import or export your data as a backup  
+- Responsive design — works perfectly on desktop and mobile  
+- Clean, lightweight, and easy to use  
 
 ---
 
@@ -41,12 +38,12 @@ It focuses on writing clean, maintainable code, using browser storage effectivel
 
 | Technology | Purpose |
 |-------------|----------|
-| **HTML5** | Markup & structure |
-| **CSS3** | Styling and layout |
-| **JavaScript (Vanilla)** | App logic and state management |
+| **HTML5** | Page structure and layout |
+| **CSS3** | Styling, responsive design, and layout |
+| **JavaScript (Vanilla)** | Core app logic and interactivity |
 | **Chart.js** | Expense chart visualization |
-| **Font Awesome** | Icons and UI elements |
-| **GitHub Pages** | Deployment and hosting |
+| **Font Awesome** | Icons for actions and UI elements |
+| **GitHub Pages** | Hosting and deployment |
 
 ---
 
@@ -57,17 +54,18 @@ It focuses on writing clean, maintainable code, using browser storage effectivel
 | ![Habit Tracker](assets/habit-section.png) | ![Expense Tracker](assets/expense-section.png) |
 
 <p align="center">
-  <img src="assets/habitFlow-dashboard" width="800" alt="HabitFlow full dashboard view">
+  <img src="assets/habitFlow-dashboard.png" width="800" alt="HabitFlow Dashboard Overview">
 </p>
 
-> *A simple, modern interface for tracking progress and spending at a glance.*
+> A clean, responsive dashboard to track your habits and expenses side by side.
 
 ---
 
 ### ⚙️ Getting Started  
 
-You can run HabitFlow locally in just a few steps:
+You can run HabitFlow locally or view it directly online.
 
+#### Option 1: Run Locally  
 1. Clone this repository  
    ```bash
    git clone https://github.com/drupathmm/habitflow.git
