@@ -57,7 +57,7 @@ It focuses on writing clean, maintainable code, using browser storage effectivel
 | ![Habit Tracker](assets/habit-section.png) | ![Expense Tracker](assets/expense-section.png) |
 
 <p align="center">
-  <img src="assets/HabitFlow-dashboard" width="800" alt="HabitFlow full dashboard view">
+  <img src="assets/habitFlow-dashboard" width="800" alt="HabitFlow full dashboard view">
 </p>
 
 > *A simple, modern interface for tracking progress and spending at a glance.*
