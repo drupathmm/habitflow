@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HabitFlow — Habit & Expense Tracker</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Chart.js for charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <h1>HabitFlow</h1>
+    <div class="controls" role="group" aria-label="Top controls">
+      <button id="exportBtn" title="Export backup" aria-label="Export backup">
+        <i class="fa-solid fa-download"></i> Export
+      </button>
+      <button id="importBtn" title="Import backup" aria-label="Import backup">
+        <i class="fa-solid fa-upload"></i> Import
+      </button>
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <!-- Habits -->
+    <section class="card" aria-labelledby="habitsTitle">
+      <h2 id="habitsTitle">Habits</h2>
+
+      <form id="habitForm" autocomplete="off" aria-label="Add new habit">
+        <input id="habitName" placeholder="New habit (e.g., Read 20m)" aria-label="New habit name" />
+        <button type="submit" aria-label="Add habit"><i class="fa-solid fa-plus"></i> Add Habit</button>
+      </form>
+
+      <ul id="habitList" class="list" role="list" aria-live="polite" aria-label="List of habits"></ul>
+    </section>
+
+    <!-- Expenses -->
+    <section class="card" aria-labelledby="expensesTitle">
+      <h2 id="expensesTitle">Expenses</h2>
+
+      <form id="expenseForm" autocomplete="off" aria-label="Add expense">
+        <input id="expenseTitle" placeholder="Expense title" aria-label="Expense title" />
+        <input id="expenseAmount" type="number" placeholder="Amount" aria-label="Expense amount" />
+        <select id="expenseCategory" aria-label="Expense category">
+          <option value="Food">Food</option>
+          <option value="Transport">Transport</option>
+          <option value="Bills">Bills</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit" aria-label="Add expense"><i class="fa-solid fa-plus"></i> Add Expense</button>
+        <div class="err" id="expenseErr" aria-live="assertive" style="display:none"></div>
+      </form>
+
+      <h3>Summary</h3>
+      <div class="summary-row">
+        <div>Total spent: <strong id="totalSpent">0.00 ₹</strong></div>
+        <div style="color:var(--muted)">Expenses by category:</div>
+      </div>
+
+      <div class="chart-wrap" role="img" aria-label="Expense chart">
+        <canvas id="expenseChart"></canvas>
+      </div>
+
+      <ul id="expenseList" class="list" role="list" aria-live="polite" aria-label="List of expenses"></ul>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
